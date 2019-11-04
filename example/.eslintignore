@@ -1,0 +1,4 @@
+__tests__/*
+utils/*
+e2e/*
+jest.setup.js

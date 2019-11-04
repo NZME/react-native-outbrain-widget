@@ -1,0 +1,234 @@
+{
+  "response": {
+    "exec_time": 27,
+    "timestamp": 1572821354397,
+    "status": {
+      "id": 0,
+      "content": "Request succeeded"
+    },
+    "request": {
+      "lang": "en",
+      "idx": "9999",
+      "lastIdx": "9999",
+      "lastCardIdx": "9999",
+      "did": "2237425792",
+      "pid": "5461",
+      "lsd": "c014b484-9462-4185-abf9-091847287861",
+      "enu": "NQMV3Ey5EMawoXHw18Go3jvOiEIaWDulNyi4m3g3AJEKhB2FtpTXxXrTUZ1zL3QG",
+      "just_created_uuid": "true",
+      "t": "MzVlM2JjMTMzY2E0MWRiZGI4MTQ5ZjRiMjhlZGEzYjU=",
+      "pvId": "35e3bc133ca41dbdb8149f4b28eda3b5",
+      "pad": "3",
+      "org": "2",
+      "abTestVal": "no_abtest",
+      "obRecsAbtestAndVars": "596-1902,565-2000,636-2017,669-2112,462-1879",
+      "widgetJsId": "SDK_3",
+      "readerPlatform": "mobile",
+      "isHttps": "true",
+      "rtbTest": "false",
+      "rtbBidTestMode": "false",
+      "rtbTestRecsNum": "0",
+      "amplifyEnabled": "true",
+      "gdpr": "0",
+      "sid": 1939903,
+      "wnid": 221,
+      "req_id": "35e3bc133ca41dbdb8149f4b28eda3b5",
+      "gl": "mE4HL5KAXkSWK7rCnLnTlg",
+      "vid": 0
+    },
+    "documents": {
+      "total_count": 5,
+      "count": 5,
+      "doc": [
+        {
+          "on-viewed": [
+            "https://log.outbrainimg.com/loggerServices/log-viewability?requestId=35e3bc133ca41dbdb8149f4b28eda3b5&position=0"
+          ],
+          "source_name": "CelebsPulse",
+          "same_source": "false",
+          "source_display_name": "CelebsPulse",
+          "pc_id": 142549078,
+          "adv_name": "CelebsPulse_Mobile_SA_PartnersProgram",
+          "publish_date": "2019-10-30 13:30",
+          "orig_url": "https://celebspulse.com/worst-fast-food-restaurants/?utm_campaign=CP_M_Fast-Foods-ac6a_2&utm_medium=CPC_M&utm_source=Outbrain&utm_term=$section_name$",
+          "rec-cats": [
+            1808
+          ],
+          "ads_type": 1,
+          "rec_en_did": "fV9oywUfuXP5m5Zssld-uw",
+          "url": "https://paid.outbrain.com/network/redir?p=1oVPsdy5T73KKMFzQnZaNIqewKYY_dcnX5ttlf9NNBUFykRrnIDqtYfBfuL_HCM6Ot_Boc0X2vm2FMloC8ACW72GEy7Vh0VLaGnrBHTcH_9gfSCEJCw1SNidfC93Pxpi5xrfet97NKN9WGRayTKj2jNhOlYLMIwyXludwIVxZ6xdRlUsBFy1XVHX7ndUwPypx9SyVW3azsyiJ4NodwoY3xyAoeElG8pdY2_G8OyPjL2gFGlq-O6cukP8Bf_KHLVFcmU0ccptIeZjb7fqa0S4n8sl8FqjxrhdigcPVkzTim1ssHVTlMKaDmaQ5JpriMPcph3EdFH7CxT0pO0oWHknO_8S40VKaugFvPK9g72lZOr6qULJDXHF_CLBUOaxJC7DEfRIqeK8IZ6W2sWU21-b8aEbPxjKDmdoBeVirKHDjE9dbO7a9AOrK3R9VmJ6MfCBC4qxTcXXScuxSv7DlMXIGz5M6Ey31im3X89ZpzUvfWu5riV9m-D5TiiY7FOXqRp2JjH2yGQ-NhUF99YSghXOryG7lGDkIceBvpXzX5BzQk2CmIQONVcX_0S4AnB1CyEvY-q2PVX6lcuaSgNCaRrAmZ52VvdryT-Mih7Xy-256IsFPH48rEwKbNvdDjIcVGccnt5ruAtUeanXLkry4ghzhEBhU_awQXMyYrllKOQCuKwEEZEzvWwO7SClxYMEamDJrDOUwqFIMBPNp8SFEbT8CpjdEIxUdbKdAaeXxTi2BEaZqBKsUK5JRtS5EQmdvFyrzkuFQVPiUUL39mznLe5swz_yfaESNWw5XeqB9rf2ttuoK1J5sFpGZRbgccU0cGbEj1Pv5ogxgqeknrGaS7QfLFD0-Ic8wiw9GJmNRNcCegLzV5Sf-8eR6P2oWvRd4MLEyUygNLH8VfPM-qf4BZowOYKs_ym2_j86gg8bzaBfgtEvh90KksPuJ3BmtUVHC9WnLAsX1EBU0DzN5qe5_hSeAyYkqC7LLQDjiIU5UqQg0Gu-lJpmZB6xrfO2BjeSntIyiKGvcF7UOINE1SLrEHUZil2zv0F4Z6qs-i4FNmqmRx8C68vrzB0NzeEFv92hgy-BGNvml40fHAOZMXugeq1Erkix3X7cdng9MeSMb2WpmWHGIQouwxZsC8bQL69gkBYGuFja6TQyPeCmuPYL4S6Gep8F3nMne_hG2Sa79BMXpWM&c=cbbf5f9c&v=3",
+          "author": "",
+          "content": "[Pics] This Is By Far The Worst Fast Food Chain In The Country",
+          "pc_cmp_id": 1002633312,
+          "pos": "0",
+          "ttid": 3,
+          "advId": "127708",
+          "thumbnail": {
+            "url": "https://images.outbrainimg.com/transform/v3/eyJpdSI6IjJiYmYzYzdkMjUxZWNkZWM1ODljZmExNGI0ZjgwMTk3NzY0NzU4ZDkyNGE0MTMwNDE3MTVjYjc0MGYyYmE0NDIiLCJ3Ijo0MDAsImgiOjIyNSwiZCI6MS41LCJjcyI6MCwiZiI6MH0.jpg",
+            "width": 400,
+            "height": 225,
+            "imageImpressionType": "DOCUMENT_IMAGE"
+          }
+        },
+        {
+          "on-viewed": [
+            "https://log.outbrainimg.com/loggerServices/log-viewability?requestId=35e3bc133ca41dbdb8149f4b28eda3b5&position=1"
+          ],
+          "source_name": "oraculum.psychic-readings-for-free.com",
+          "same_source": "false",
+          "source_display_name": "oraculum.psychic-readings-for-free.com",
+          "pc_id": 138464527,
+          "adv_name": "NLW - Chris",
+          "publish_date": "1969-12-31 19:00",
+          "orig_url": "https://oraculum.psychic-readings-for-free.com/message_video98/a/a?utm_source=Outbrain&utm_medium=cpc&utm_campaign=Chris-NZEN-OB-m-PerformanceWhitelist-V5&utm_content=00d7b8b1728a62e2e38ec0f1667e14a279&dv=m&lc=en&cc=nz&ar=XXXX&gd=X&ob_click_id=$ob_click_id$&sectionname=$section_name$&placement=$publisher_name$",
+          "rec-cats": [
+            1804,
+            1205,
+            1907
+          ],
+          "ads_type": 1,
+          "rec_en_did": "MTWRw1eAFFuTS4Bd2qzYzQ",
+          "url": "https://paid.outbrain.com/network/redir?p=oS8DZIAv3JS4Xwxr0QqwYQOwyTozHTOJD1XOEKfoW54jHN_ub3MIzGKnmmc7smG2uXx_Z91jsTx1m2NYbdXsv5ojpVbIdJnLDS3TvFWcMPgPlJS_PLw7wLDPCXF32MkXdiM2ruvRwtbHeaIRERlati5QtPYAOBSSX8KAPL0_PryPgRBpnUQHo75gmsgACklcjjwegTYZaM8jcaA1BiVyO6Gor37-qRUDovyj_B1DUc38NMdIOiW4U4e-waBAfeqXvHz0NO-Lz7dkp6Y3_jMbRJY7Sbv6jUYwTmG_1CWcROXTj5YkTCuD576Nt0-LnctjqXEkPURs0t8BQLe1h2nQvc4bGN7gcr17Qf9ReCY9KOBdMATmkOmEsZpWIPSEUkMhEMfGK4b5EkIQffQmPkvO30-hldtjo0p7wrUxEZDJPhlVI15AWKdZCboOYJQ71gWEEfPhws303dzDA030rATizk4lLr4cW49db9Bhg1enk85A9FbjbGhUwkpTGQ3FeVgc04fDRUuCtkNh22n3dGpNwVwnTvG8Q_rw69tguSegN9unouMnMiltRMTypLphayU394BmNnBIbQs9s_Uwqx97xJZK5xgwQRT5na6SRX3iPo3zLlgKRatdu6HdJU6aCVctcOX57KJpwKK-ZlbMIl2KunkZYtWXQKHfIhsJWHl_2IjGX10bo-yppqjUafJ0M6YclAWLpHFLWnEXplBJpsHwFlE6VQUklMyf6CQU-EgiuIWmDT-kLLQYh4sEDhJBkkxXKfrI2ypcHv9A_Tzg0GwO8ySGQ-xaDzdkkFrtf5Oin0zaJlEfX3FRtWUSP3I0rI3pLzPkf6ZwjDxuQa4OsV30Wq9kmgF7w7TkksFU3LRgMWMBInLC5QJ7T5EdyQVqQxfqLGl5JNA6E2ZjkrHr0KoXqbrjEVLkQ_HuaH8xYXF_HEqeVcg7rCUPuprl3TLa5MuG9u-oFHffCMd0mapvVgTPZX2ZGkzeqpKQTkaPdDXnQdLlNGSwOYQJJaLJvkBk1mthAmU2Re8MaXdeSQr5K3UTGdpAqgN7mCF1zHWyPospq9C-7SlgIN9Fwe0_Ymcn0gL5INiBdoMpZ-btwO-cQEro3YjnwuIYuaI6V0lglaHYLUKTA9UB8NeuiH-AppRtoVZk_2jFbQOxf54UYsJEJov1d7kLjySCp37CZHGY5Bus6Q8ppEkIr2KxbfJwGTOT61zfFEkTLXpkThpQmmA_DYmIQFSTCT5q4RuNEzkXro6ErhU&c=15ddb286&v=3",
+          "author": "",
+          "content": "Your Horoscope 2019: so accurate that it will give you goosebumps",
+          "pc_cmp_id": 1002446973,
+          "pos": "1",
+          "ttid": 3,
+          "advId": "95905",
+          "thumbnail": {
+            "url": "https://images.outbrainimg.com/transform/v3/eyJpdSI6IjI5NjYyODFkZjU4YWJiNzEzYzAxMTVjZTlmNzg2N2IwMzJhNzEzOWZhNGQ5YjBkYTlhYzk2Yjg4NmFiN2NjMWMiLCJ3Ijo0MDAsImgiOjIyNSwiZCI6MS41LCJjcyI6MCwiZiI6MH0.jpg",
+            "width": 400,
+            "height": 225,
+            "imageImpressionType": "DOCUMENT_IMAGE"
+          },
+          "appflow": {
+            "shouldOpenInExternalBrowser": "true"
+          }
+        },
+        {
+          "on-viewed": [
+            "https://log.outbrainimg.com/loggerServices/log-viewability?requestId=35e3bc133ca41dbdb8149f4b28eda3b5&position=2"
+          ],
+          "source_name": "Life & Style",
+          "same_source": "false",
+          "source_display_name": "Life & Style",
+          "explain": "reasonType=DEFAULT, , , isClickable=false, reasonCtaText=, reasonText=suggested for you",
+          "pub_id": "5461",
+          "source_id": "1939899",
+          "publish_date": "2019-10-30 17:37",
+          "orig_url": "https://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=12281144",
+          "desc": "The former convict denies having had Botox but appears to have had cosmetic enhancements.",
+          "rec-cats": [
+            2005
+          ],
+          "ads_type": 2,
+          "rec_en_did": "dRYZwjyLmEyGRIpWjFvy3w",
+          "url": "https://traffic.outbrain.com/network/redir?p=4zeS4mHhHhO-V_gM-EBIXpBc9LS4coZcMh03ZPmvJpgRsGUC_79OcxqPIpE_LmbEdtWMjsTo0H_gK_ya6GWpnrcfhGF2Qu0a4q6M69HtOuMD5PiXjs0VRTOaa_xXbcRxvQ_LZEDnF4d3z3Z0r90AgwL48Ucun2uY8k8MhGCY8imX12C6E5xj5avZQUKmMkV_ZryuRcgZFDKPUooUqWAjBH8uCvBpWdIyM3JH_LgCQ8a5K19HALqUjAoJHuwFgBlT4dNZF3-80V2xaxN1wsw6U45GdN1NzJpS-8Pt-yesQY_bto-OfD4JDR-YCsiFxFsu2oQW9g-fFnaC-aDCFU7NSKIbi0LH_h3hybTM-TNiGklbwcHNqbUjxfXvl7OBom2C8Y_M4X_2ICzvLFLwxWCnymN-IbkoJPBAnMPdCyVMVXdM8a1bKbjuWupYzuyUoE-wH1HWdtXmPaHLgjtswShFBT7kwcNEOQLgw4O4NK_FjpIz73Pd8UNlN3o4rze0P1FNBbBgeT3QgFs88Sx08rb5S87EnZGvq2t1ewbusF1mhEecPVNahfPL19EiLXY4wjC9h0psTxqOaj_zfLXkHTDbNogPwGDmUNhVpBncyb7-d7_D-jW9y4pDwkWoMBIvTy4rTiAjvM0_N3gloXtXWpKniXF5ynUDOcnMg0tNEW8raLLyq_OI_IH-9gFmZ0E1lduygytcgMl3-C-SXa3zc_9i6_zbyl40T7McyQj9X77Z1iKL8HJXo2lK8RpdlMzTXhgDwRtWK0xISYvAiRzGgNfS084CBhk9Jj2bpNdOgAgfjhEoRt3nXw1ze_TCLv5AB3Ks5iKzpJDLoeDrmZhhwOaaPv_VOAe3UtN0pMrBsI5WUR2SJlWfIpnMpkwdKrFB77duFzeSWntSloEN_OlzkXHS7pOY8rYQHCUUTV2BZo29gV7RJkwzP4Pmo9JNkIEkenH7CxJnJxLo53aR5J7oPjxmoWDyzHR1rhVeAnmVgpjobaw&c=5e969b14&v=3",
+          "author": "news.com.au",
+          "content": "'Why did you do that to your face?': Schapelle Corby's new look stuns",
+          "pos": "2",
+          "ttid": 4,
+          "rec-iab-cats": [
+            1900
+          ],
+          "thumbnail": {
+            "url": "https://images.outbrainimg.com/transform/v3/eyJpdSI6Ijk2ZjlkNjdmMzVlNTRhYTlhYjI0OGFlZDUxMDNiY2Y5NmM2MDUzODY2MTYxZGI1N2FkZmI2MDRlYzZkMDZiMmEiLCJ3Ijo0MDAsImgiOjIyNSwiZCI6MS41LCJjcyI6MCwiZiI6MH0.jpg",
+            "width": 400,
+            "height": 225,
+            "imageImpressionType": "DOCUMENT_IMAGE"
+          },
+          "reason": {
+            "text": "suggested for you",
+            "type": "0",
+            "clickable": "false"
+          }
+        },
+        {
+          "on-viewed": [
+            "https://log.outbrainimg.com/loggerServices/log-viewability?requestId=35e3bc133ca41dbdb8149f4b28eda3b5&position=3"
+          ],
+          "source_name": "Flipopular",
+          "same_source": "false",
+          "source_display_name": "Flipopular",
+          "pc_id": 142572839,
+          "adv_name": "FeedsWiki_Flipopular",
+          "publish_date": "1969-12-31 19:00",
+          "orig_url": "https://www.flipopular.com/at-the-age-of-13-he-built-a-house-that-surprised-everyone-with-only-1500/?utm_source=$section_name$&utm_medium=outbrain&utm_campaign=00e2dbc38582591f4e17139189aa999d1a&utm_content=$publisher_name$&utm_term=At+The+Age+Of+13%2C+Luke+Built+Himself+A+House+During+School+Summer",
+          "rec-cats": [
+            1208
+          ],
+          "ads_type": 1,
+          "rec_en_did": "BcZ3CiRTV6nox2hLjVfMKg",
+          "url": "https://paid.outbrain.com/network/redir?p=KcQRHm5TK8JGJBW4VErp2jjnuwQIKNfAosWLNAwdR_3178GFWsraY2Vm7tJ8b3SgzUil_h9WkhH1yjURRSgXEO4YOIMHd8LxONCGH1cJqADLgI3dasiJjOHWBZ9F1Ud0kuuwyJm348XxfK390pt9Rj_Pa9tCxYC9y7OOsfwszNl4mgTkaBsMWm6hcAteaYEJTtXwa9AhYeGfpS-mQAP1B4ONODXoju8RmS57sSXffcjxoJNvg0SzyBbAAsm3ca5hYwXrxMGW7Bv2UEwDe4JgzUiMWk46tkndnY0aiVUz3muIGyn8AMkvY9EkwCicH-84aZ_m_L75k39gVdBzPiZDjPVsXb-7WJW-w4BTMEQp49ulxerpX5BtzqRDy5J5rx7OfpXeQKgdzBmDmwDN_xnXAlJD-Br5HZDQtfh6vjbUAEv3pWlDqq0q3A1rnfluH53k-f7itLv2YZV0QErkq6VhCQ-wTK1pEFvJGVhG1XYB0utrCOQcViCUkiDiREyYtf3dbLfAss9L-xNV1NJqD9x4Bg_QxeMymsBPkvy__Srh0g1Zy4wQQY3ACp-r80-G-rgrSmGQ7rFQxzzniMWHxnKBTdEn_Prqi6toGkzSr8nFjzUY_Nc_jvoSReWFLdDD5SlIM6KCCSiIx7WmKqePeKWEF-7RywKv_L4P5boKQmBDxroHTuAWoUnIXoXIwXrbUpPth9tW2I5DyNmzxqG9rkMXBPqFWVMg8w2HCDhXcedmeMnGf6UYhFJrOQGwhHOFR0AQ3fAXq4s0dhXiGgXlh_3brY8-NM2BdjCL51qvSx5_ZMyD8CGG0GUJJZG677kcMO7HMXeAbXYVrldTNXleWTZQIx2erKGenCc6LorfMl-DTD_0ARfvFI9mW4wagAOOUxdaUqWpexR9vYd67KtMEy2QpXccHK-6Gc7PvqX_Eq3khuSZjdgsFWvzaF16VgrNKHIpzyHvC2DxW0kuzFSCwyQ4ncjYQsCnkv_lDwdbUthXBG4dbKkVgUlrgFL5G-ny09-N5ZuQXicRxkAU5YIolwtvFiv2DIpx3unkUB9oM_3lE28icAz4A6v-QJq5NbLiX8YuICjpHC30_azzGbEBK8vT8v0AbFhNnbKWth0BrO1TAnTwMv_EIcMtepQ2PfSo_ZJJcLbG4j5PV1A3ch0sIaFdriKWeJea9sRwXil1E52r0PXKgKUtD7qD6613ZfHWT9Ef&c=2ad2be58&v=3",
+          "author": "",
+          "content": "[Pics] 13-Year-Old Boy Built A House For Just $1500: Look When He Opens The Door And Reveals The Inside",
+          "pc_cmp_id": 1002634697,
+          "pos": "3",
+          "ttid": 3,
+          "advId": "137723",
+          "thumbnail": {
+            "url": "https://images.outbrainimg.com/transform/v3/eyJpdSI6IjRkM2Y2MzRjY2RjMjIwYzY4MjNkNjM0NTM2YmVhYzgxMmZiNjZkZDkwMjI4MTdkYmJhZTUxYjBhNjE1ZTkzZTciLCJ3Ijo0MDAsImgiOjIyNSwiZCI6MS41LCJjcyI6MCwiZiI6MH0.jpg",
+            "width": 400,
+            "height": 225,
+            "imageImpressionType": "DOCUMENT_IMAGE"
+          }
+        },
+        {
+          "on-viewed": [
+            "https://log.outbrainimg.com/loggerServices/log-viewability?requestId=35e3bc133ca41dbdb8149f4b28eda3b5&position=4"
+          ],
+          "source_name": "New Zealand Herald",
+          "same_source": "true",
+          "source_display_name": "New Zealand Herald",
+          "explain": "reasonType=DEFAULT, , , isClickable=false, reasonCtaText=, reasonText=suggested for you",
+          "pub_id": "5461",
+          "source_id": "1939903",
+          "publish_date": "2019-11-03 02:00",
+          "orig_url": "https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12282037",
+          "desc": "The family has been told Mason died of natural causes.",
+          "rec-cats": [
+            1702
+          ],
+          "ads_type": 2,
+          "rec_en_did": "acOhMAIP78YI7KzpDcNM8w",
+          "url": "https://traffic.outbrain.com/network/redir?p=XDXhdhD6rPDjfguL4H6Z6Sk_7ZsJU1cCn18LdoXw4iLcIJOy6H1PoUffYfQ9GBmoJa-hQJtWRhz-V8h0DQvBS2Nwao8ysVbPZAXj2Jigxs-gLOtrPgDJwJ2YDsl3QTYsjrQ5h77sdfw3ZYqbjFoUHXK2M6jNRMLegHmXfk9LTLT5_d3t85adK616rpo-jnXsUujM7ZraOqSwPUhoX6VTzYXZfgjMhs-tFFvJOLbW5xpbfnqIuzcM7UNASE__VqIHSTT_UffSJC2BIzvsYHcccXDKvnwOBOM5UhT_awXEcV3wq2vuUbWI5UEne-EYUciW6yTXxtWSWs44O5va85kbltIZQ1BPfOM1SFlvFwkONKZ8oasYv932xsjRvENobn-ZCx-4rnMwU8jSDlKTSuqwc9S_HuClUxeJkxI9dK7GkLqz6eFT5i_HGsYmXPWyb5AJKNdvrNU4PUKCwnRN9_Wn_LU5pFoDl97PDFCJ7liL23PuWjOlNb3BuUsJbJLrMLmpRjcQWjls5ZDiFIvcpvt9NgJ-hyC5es9QSKetwOkPB0yVWZjCXshX-VNdpbpou2CEAHM27xiGE-7MEzrAZlfPr6A2wBUKp3ZTxuwsyPPbHSE6JbvBA1aEQXoqkR71Vi4H7Wu6YVyITzj_1RMOf-4k1JGttRtDCwWOOAgBjrWhqa2ZzDV4TwdAAhuqoh7QaT4CS8OQHDFYIU-6BjAbAW7JHsvMMEu9WxTOYy9LwYDQpFm-1lgbT5MjUDFCFMtThDa7XJemR7LiMk-zfMT9JpQUakmkpJIYlN2m_yvgbJzihjTuREBamn-MvXZvmM0p7Ex5X_cKuyzlxno_PtX62v2bt5DGsnGtphIRT33hcaSyQTGzNzKRA2BM6J7B7GGD89-3u3ARMXvdY9Z8rj4UelTdqzhGK5MuWNTZcS2EW267P_5c6Bs5vFx4nptYX4OdZucTCKhrmcMeCs_u8R7buhh6fScEcfX0p5_PQBRK7EouYXI&c=a7113487&v=3",
+          "author": "newsfeeds@nzherald.co.nz",
+          "content": "Grieving stepdad says Canterbury University student Mason Pendrous died of natural causes",
+          "pos": "4",
+          "ttid": 4,
+          "rec-iab-cats": [
+            1200
+          ],
+          "thumbnail": {
+            "url": "https://images.outbrainimg.com/transform/v3/eyJpdSI6IjkzMDQ1MTc4OGMxZmU2MWU4OTc5NGNlYjVkYjM5ZTI5MjRmYmEwMTgyNTYzZDM5YTdkMGRkNTM1ZDVkN2FmYmQiLCJ3Ijo0MDAsImgiOjIyNSwiZCI6MS41LCJjcyI6MCwiZiI6MH0.jpg",
+            "width": 400,
+            "height": 225,
+            "imageImpressionType": "DOCUMENT_IMAGE"
+          },
+          "reason": {
+            "text": "suggested for you",
+            "type": "0",
+            "clickable": "false"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "flagPublisherZappingFeature": true,
+      "defaultRecNumber": 4,
+      "showHttpsInURLForRecs": true,
+      "recMode": "odb_jsonData",
+      "globalWidgetStatistics": true,
+      "apv": true,
+      "adChoicesEnabled": true,
+      "listingsViewability": true,
+      "ImpressionTrackersSupported": "false",
+      "InstallationType": "mobile-app-sdk",
+      "ImpressionPixelsSupported": "false"
+    },
+    "viewability_actions": {
+      "reportServed": "https://mcdp-sadc1.outbrain.com/l?token=35e3bc133ca41dbdb8149f4b28eda3b5_5461_1572821354422",
+      "reportViewed": "https://log.outbrainimg.com/loggerServices/widgetGlobalEvent?rId=35e3bc133ca41dbdb8149f4b28eda3b5&pvId=35e3bc133ca41dbdb8149f4b28eda3b5&sid=1939903&pid=5461&idx=9999&wId=221&pad=3&org=2&tm=0&eT=3"
+    }
+  }
+}
