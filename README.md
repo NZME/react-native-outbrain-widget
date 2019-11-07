@@ -64,6 +64,49 @@ In addition, you'll have access to the following component:
 
 Please ensure you've reviewed Outbrain's [instructions](http://developer.outbrain.com/) to get a better understanding of each of these components and how you should use them.
 
+##### Example component
+```js
+export class OutbrainView extends Component {
+  _onPressButton = () => {
+    if (!this.props.content.url) {
+      return null;
+    }
+    Linking.openURL(this.props.content.url);
+  };
+
+  render() {
+    if (!this.props.content) {
+      return null;
+    }
+
+    return (
+      <View>
+        <TouchableOpacity onPress={this._onPressButton}>
+          <View>
+            <View>
+              <Image
+                source={{ uri: this.props.content.thumbnail.url }}
+              />
+            </View>
+            <View>
+              <Text>{this.props.content.content}</Text>
+            </View>
+            <View>
+              <Text>
+                {this.props.content.source_name}
+              </Text>
+              <Text>
+                {this.props.content.publish_date}
+              </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+}
+```
+
 #### 2. Inject your component into OutbrainList as a renderItem function
 
 `OutbrainList` has the following props:
