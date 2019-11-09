@@ -5,7 +5,8 @@
   "description": "Outbrain content recommendation implementation for React Native.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "post-patch": "npm version patch && git push origin --all && git push origin --tags"
   },
   "repository": {
     "type": "git",
