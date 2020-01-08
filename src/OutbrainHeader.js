@@ -12,7 +12,7 @@ import {
 
 class OutbrainHeader extends Component {
   _onPressButton = () => {
-    let url = 'https://www.outbrain.com/what-is/default/en-mobile' + (this.props.uniqueUserId ? this.props.uniqueUserId : '');
+    let url = 'https://www.outbrain.com/what-is/default/en-mobile?uid=' + (this.props.uniqueUserId ? this.props.uniqueUserId : '');
     Linking.openURL(url);
   };
 
@@ -20,7 +20,7 @@ class OutbrainHeader extends Component {
     const styles = {
       ...defaultStyles,
       ...this.props.customStyles
-    }
+    };
     return (
       <View {...this.props}>
         <View style={styles.headerHolder}>

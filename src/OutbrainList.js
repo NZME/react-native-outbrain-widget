@@ -7,18 +7,23 @@ const VISIBILITY_THRESHOLD = 50;
 var instancesCount = 0;
 
 class OutbrainList extends Component {
+  _isMounted = false;
+  _reportServed = false;
+  _reportViewed = false;
+
   constructor(props) {
     super(props);
     this.state = {
       canRenderContent: false,
       content: false,
-      reportServed: false,
-      reportViewed: false,
+      reportServedUrl: false,
+      reportViewedUrl: false,
     };
     this.instanceIdx = 0;
   }
 
   componentDidMount() {
+    this._isMounted = true;
     this.instanceIdx = instancesCount;
     instancesCount += 1;
     if (this.props.dataSource) {
@@ -29,6 +34,7 @@ class OutbrainList extends Component {
   }
 
   componentWillUnmount() {
+    this._isMounted = false;
     instancesCount -= 1;
     this.stopWatching()
   }
@@ -36,6 +42,8 @@ class OutbrainList extends Component {
   loadContent() {
     // load stuff here
     ContentService.setPartnerKey(this.props.partnerKey);
+    const uniqueUserId = this.props.uniqueUserId ? this.props.uniqueUserId : 'null';
+    ContentService.setUniqueUserId(uniqueUserId);
     if (this.props.enableTestMode) {
       ContentService.setTestMode(true);
     }
@@ -53,24 +61,25 @@ class OutbrainList extends Component {
     } else {
       ContentService.setWidgetIndex(this.instanceIdx);
     }
-    if (this.props.uniqueUserId) {
-      ContentService.setUniqueUserId(this.props.uniqueUserId);
-    }
     if (this.props.location) {
       ContentService.setLocation(this.props.location);
     }
 
     ContentService.getContent()
       .then(data => {
-        this.processResponse(data);
-        if (this.props.onContentLoaded) {
-          this.props.onContentLoaded(data);
+        if (this._isMounted) {
+          this.processResponse(data);
+          if (this.props.onContentLoaded) {
+            this.props.onContentLoaded(data);
+          }
         }
       })
       .catch(error => {
-        this.setState({ canRenderContent: false });
-        if (this.props.onContentFailedToLoad) {
-          this.props.onContentFailedToLoad(error);
+        if (this._isMounted) {
+          this.setState({canRenderContent: false});
+          if (this.props.onContentFailedToLoad) {
+            this.props.onContentFailedToLoad(error);
+          }
         }
       });
   }
@@ -83,16 +92,19 @@ class OutbrainList extends Component {
     this.setState({
       canRenderContent: true,
       content: content,
-      reportServed: data.response.viewability_actions.reportServed,
-      reportViewed: data.response.viewability_actions.reportViewed,
+      reportServedUrl: data.response.viewability_actions.reportServed,
+      reportViewedUrl: data.response.viewability_actions.reportViewed,
     });
   }
 
   reportServed() {
-    if (this.state.reportServed) {
-      ContentService.reportServed(this.state.reportServed)
+    if (this.state.reportServedUrl && !this._reportServed) {
+      this._reportServed = true;
+      ContentService.reportServed(this.state.reportServedUrl)
         .then(ok => {
-          this.setState({ reportServed: false });
+          if (this._isMounted) {
+            this.setState({reportServedUrl: false});
+          }
         })
         .catch(e => {
           // do nothing
@@ -101,10 +113,13 @@ class OutbrainList extends Component {
   }
 
   reportViewed() {
-    if (this.state.reportViewed) {
-      ContentService.reportViewed(this.state.reportViewed)
+    if (this.state.reportViewedUrl && !this._reportViewed) {
+      this._reportViewed = true;
+      ContentService.reportViewed(this.state.reportViewedUrl)
         .then(ok => {
-          this.setState({reportViewed: false});
+          if (this._isMounted) {
+            this.setState({reportViewedUrl: false});
+          }
         })
         .catch(e => {
           // do nothing
@@ -127,7 +142,7 @@ class OutbrainList extends Component {
         return
       }
       this._holderView.measure((x, y, width, height, pageX, pageY) => {
-        // deteck how much of the view is on visible screen
+        // detect how much of the view is on visible screen
         if (height && pageY) {
           // height (element height) - pageY (vertical position on page) / height (element height) * 100
           let visiblePercentage = ((height - pageY) / height * 100);

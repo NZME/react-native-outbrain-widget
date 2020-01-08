@@ -12,7 +12,6 @@ export class ContentService {
    * &idx=[WIDGET_INDEX]
    * &api_user_id=[UNIQUE_USER_ID]
    * &format=vjnc
-   * &installationType=server-side-api
    * &va=true
    */
   urlParts = {};
@@ -119,7 +118,6 @@ export class ContentService {
     let urlElms = {
       ...this.urlParts,
       format: 'vjnc',
-      installationType: 'server-side-api',
       va: true,
     };
 
@@ -190,6 +188,28 @@ export class ContentService {
   }
 
   /**
+   * Report that content has been clicked
+   * @param url
+   * @returns {Promise<T>}
+   */
+  async reportClicked(url) {
+    return await this._fetch({
+      method: 'GET',
+      url: url,
+    })
+      .then(res => {
+        if (res.status === 200 || res.status === 201) {
+          return true;
+        } else {
+          throw new Error('Click not tracked.');
+        }
+      })
+      .catch(error => {
+        throw error;
+      });
+  }
+
+  /**
    * A generic function that prepares the request
    * @param opts
    * @returns {Promise<any>}
@@ -221,7 +241,6 @@ export class ContentService {
     }
 
     let res = {};
-
     let response = await fetch(opts.url, reqOpts);
 
     res.status = response.status;
