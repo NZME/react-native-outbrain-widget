@@ -39,6 +39,13 @@ class OutbrainList extends Component {
     this.stopWatching()
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this?.state?.canRenderContent === nextState?.canRenderContent) {
+      return false;
+    }
+    return true;
+  }
+
   loadContent() {
     // load stuff here
     ContentService.setPartnerKey(this.props.partnerKey);
