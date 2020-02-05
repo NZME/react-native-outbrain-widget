@@ -96,6 +96,10 @@ class OutbrainList extends Component {
     if (this.props.maxItems && content.length > this.props.maxItems) {
       content = content.slice(0, this.props.maxItems);
     }
+    if (this.props.renderHeader && this.props.renderHeaderIndex) {
+      content.splice(this.props.renderHeaderIndex, 0, "header")
+    }
+
     this.setState({
       canRenderContent: true,
       content: content,
@@ -168,8 +172,17 @@ class OutbrainList extends Component {
     }
     this.startWatching();
     this.reportServed();
+
     return this.state.content.map((data, index) => {
-      return this.props.renderItem({content: data, index: index});
+      if (data === "header") {
+        if (this.props.renderHeader) {
+          return this.props.renderHeader({content: data, index: index});
+        } else {
+          return null;
+        }
+      } else {
+        return this.props.renderItem({content: data, index: index});
+      }
     });
   };
 
@@ -208,6 +221,9 @@ OutbrainList.propTypes = {
    */
   onContentLoaded: PropTypes.func,
   onContentFailedToLoad: PropTypes.func,
+
+  renderHeader: PropTypes.func,
+  renderHeaderIndex: PropTypes.number,
 };
 
 export default OutbrainList;
