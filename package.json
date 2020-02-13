@@ -1,5 +1,5 @@
 {
-  "name": "react-native-outbrain",
+  "name": "react-native-outbrain-widget",
   "title": "React Native Outbrain",
   "version": "1.0.5",
   "description": "Outbrain content recommendation implementation for React Native.",
@@ -10,8 +10,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NZME/react-native-outbrain.git",
-    "baseUrl": "https://github.com/NZME/react-native-outbrain"
+    "url": "git+https://github.com/NZME/react-native-outbrain-widget.git",
+    "baseUrl": "https://github.com/NZME/react-native-outbrain-widget"
   },
   "keywords": [
     "react-native",

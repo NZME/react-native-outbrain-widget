@@ -10,7 +10,7 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59",
-    "react-native-outbrain": "file:../"
+    "react-native-outbrain-widget": "file:../"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

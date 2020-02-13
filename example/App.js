@@ -10,7 +10,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView, Platform } from 'react-native';
-import { OutbrainList, OutbrainHeader } from 'react-native-outbrain';
+import { OutbrainList, OutbrainHeader } from 'react-native-outbrain-widget';
 import { OutbrainView } from './OutbrainView';
 import DUMMY_RESPONSE from './dummy-response.json';
 

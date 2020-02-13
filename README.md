@@ -1,19 +1,19 @@
-# react-native-outbrain
+# react-native-outbrain-widget
 
 ## Getting started
 
-`$ npm install react-native-outbrain --save`
+`$ npm install react-native-outbrain-widget --save`
 
 ## Usage
 ```js
-import { OutbrainList, OutbrainHeader } from 'react-native-outbrain';
+import { OutbrainList, OutbrainHeader } from 'react-native-outbrain-widget';
 ```
 
 ### Outbrain recommendations
 
 This library allows you to create custom layouts that match your app. Before proceeding, please review [Outbrain Developer Center](http://developer.outbrain.com/) to get a better understanding of the requirements.
 
-<img width="300" src="https://github.com/NZME/react-native-outbrain/raw/master/Outbrain-example.png" />
+<img width="300" src="https://github.com/NZME/react-native-outbrain-widget/raw/master/Outbrain-example.png" />
 
 #### 1. Create your component
 
@@ -126,7 +126,7 @@ export class OutbrainView extends Component {
 - `onContentFailedToLoad` - You can add an event listener for when the content failed to load.
 
 ```js
-import { OutbrainList } from 'react-native-outbrain';
+import { OutbrainList } from 'react-native-outbrain-widget';
 
 class myItemView extends React.Component {
  ...
@@ -176,7 +176,7 @@ Your component will have access to the following properties:
 #### Example OutbrainHeader usage
 
 ```js
-import { OutbrainHeader } from 'react-native-outbrain';
+import { OutbrainHeader } from 'react-native-outbrain-widget';
 
 const styles = StyleSheet.create({
   headerHolder: {
