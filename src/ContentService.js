@@ -1,3 +1,5 @@
+import { Platform } from 'react-native';
+
 const BASE_URL = 'https://odb.outbrain.com';
 
 /**
@@ -234,8 +236,11 @@ export class ContentService {
       reqOpts.headers['Content-Type'] = 'application/json';
     }
 
-    reqOpts.headers["User-Agent"] = 'React Native Mobile App';
-
+    if (Platform.OS === 'ios') {
+      reqOpts.headers["User-Agent"] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1';
+    } else {
+      reqOpts.headers["User-Agent"] = 'Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36';
+    }
     if (opts.body) {
       reqOpts.body = JSON.stringify(opts.body);
     }

@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { View, ViewPropTypes } from 'react-native';
+import { Dimensions, View, ViewPropTypes } from 'react-native';
 import ContentService from './ContentService';
 
 const VISIBILITY_THRESHOLD = 50;
-var instancesCount = 0;
+const screenHeight = Dimensions.get('window').height;
 
 class OutbrainList extends Component {
   _isMounted = false;
@@ -24,8 +24,6 @@ class OutbrainList extends Component {
 
   componentDidMount() {
     this._isMounted = true;
-    this.instanceIdx = instancesCount;
-    instancesCount += 1;
     if (this.props.dataSource) {
       this.processResponse(this.props.dataSource);
     } else {
@@ -35,7 +33,6 @@ class OutbrainList extends Component {
 
   componentWillUnmount() {
     this._isMounted = false;
-    instancesCount -= 1;
     this.stopWatching()
   }
 
@@ -63,7 +60,7 @@ class OutbrainList extends Component {
     if (this.props.widgetId) {
       ContentService.setWidgetId(this.props.widgetId);
     }
-    if (this.props.widgetIndex) {
+    if (this.props.widgetIndex !== null) {
       ContentService.setWidgetIndex(this.props.widgetIndex);
     } else {
       ContentService.setWidgetIndex(this.instanceIdx);
@@ -156,7 +153,7 @@ class OutbrainList extends Component {
         // detect how much of the view is on visible screen
         if (height && pageY) {
           // height (element height) - pageY (vertical position on page) / height (element height) * 100
-          let visiblePercentage = ((height - pageY) / height * 100);
+          let visiblePercentage = ((screenHeight - pageY) / screenHeight * 100);
           if (visiblePercentage >= VISIBILITY_THRESHOLD) {
             this.stopWatching();
             this.reportViewed();

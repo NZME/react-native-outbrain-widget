@@ -13,7 +13,7 @@ import {
 class OutbrainHeader extends Component {
   _onPressButton = () => {
     const doo = !this.props.uniqueUserId ? 'false' : 'true';
-    let url = 'https://www.outbrain.com/what-is/default/en-mobile?uid=' + (this.props.uniqueUserId ? this.props.uniqueUserId : '') + '&doo=' + doo;
+    let url = 'https://www.outbrain.com/what-is/default/en-mobile?uid=' + (this.props.uniqueUserId ? this.props.uniqueUserId : 'null') + '&doo=' + doo;
     Linking.openURL(url);
   };
 
