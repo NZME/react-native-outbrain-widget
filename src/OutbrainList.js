@@ -90,6 +90,25 @@ class OutbrainList extends Component {
 
   processResponse(data) {
     let content = data.response.documents.doc;
+
+    const regex = /^.*nzherald.co.nz.*$/;
+    content.sort(function (a, b) {
+      if (a?.orig_url && b?.orig_url) {
+        const aIsNZH = regex.test(a?.orig_url);
+        const bIsNZH = regex.test(b?.orig_url);
+        if (aIsNZH && bIsNZH) {
+          return 0;
+        }
+        if (aIsNZH) {
+          return -1;
+        }
+        if (bIsNZH) {
+          return 1;
+        }
+      }
+      return 0;
+    });
+
     if (this.props.maxItems && content.length > this.props.maxItems) {
       content = content.slice(0, this.props.maxItems);
     }
