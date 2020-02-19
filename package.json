@@ -1,7 +1,7 @@
 {
   "name": "react-native-outbrain-widget",
   "title": "React Native Outbrain",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Outbrain content recommendation implementation for React Native.",
   "main": "src/index.js",
   "scripts": {
