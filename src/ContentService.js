@@ -36,7 +36,7 @@ export class ContentService {
    * @returns {ContentService}
    */
   setPermalinkUrl(url) {
-    this.urlParts.url = encodeURI(url);
+    this.urlParts.url = encodeURIComponent(url);
     return this;
   }
 
@@ -123,11 +123,11 @@ export class ContentService {
       va: true,
     };
 
-    url += '?' + Object.keys(urlElms)
-      .map(function(key, index) {
-        return key + '=' + urlElms[key];
-      })
-      .join('&');
+    url +=
+      '?' +
+      Object.keys(urlElms)
+        .map((key, index) => `${key}=${urlElms[key]}`)
+        .join('&');
 
     return await this._fetch({
       method: 'GET',
