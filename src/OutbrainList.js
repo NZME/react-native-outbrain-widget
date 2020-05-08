@@ -89,6 +89,12 @@ class OutbrainList extends Component {
   }
 
   processResponse(data) {
+    const {
+      maxItems,
+      renderHeader,
+      renderHeaderIndex,
+      onContentProcessed
+    } = this.props;
     let content = data.response.documents.doc;
 
     const regex = /^.*nzherald.co.nz.*$/;
@@ -109,11 +115,11 @@ class OutbrainList extends Component {
       return 0;
     });
 
-    if (this.props.maxItems && content.length > this.props.maxItems) {
-      content = content.slice(0, this.props.maxItems);
+    if (maxItems && content.length > maxItems) {
+      content = content.slice(0, maxItems);
     }
-    if (this.props.renderHeader && this.props.renderHeaderIndex) {
-      content.splice(this.props.renderHeaderIndex, 0, "header")
+    if (renderHeader && renderHeaderIndex) {
+      content.splice(renderHeaderIndex, 0, "header")
     }
 
     this.setState({
@@ -121,6 +127,10 @@ class OutbrainList extends Component {
       content: content,
       reportServedUrl: data.response.viewability_actions.reportServed,
       reportViewedUrl: data.response.viewability_actions.reportViewed,
+    }, () => {
+      if (onContentProcessed) {
+        onContentProcessed();
+      }
     });
   }
 
@@ -237,6 +247,7 @@ OutbrainList.propTypes = {
    */
   onContentLoaded: PropTypes.func,
   onContentFailedToLoad: PropTypes.func,
+  onContentProcessed: PropTypes.func,
 
   renderHeader: PropTypes.func,
   renderHeaderIndex: PropTypes.number,
