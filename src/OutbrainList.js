@@ -150,8 +150,13 @@ class OutbrainList extends Component {
   }
 
   reportViewed() {
+    const { onReportViewed } = this.props;
+    const { content } = this.state;
     if (this.state.reportViewedUrl && !this._reportViewed) {
       this._reportViewed = true;
+      if (onReportViewed) {
+        onReportViewed(content)
+      }
       ContentService.reportViewed(this.state.reportViewedUrl)
         .then(ok => {
           if (this._isMounted) {
@@ -248,6 +253,7 @@ OutbrainList.propTypes = {
   onContentLoaded: PropTypes.func,
   onContentFailedToLoad: PropTypes.func,
   onContentProcessed: PropTypes.func,
+  onReportViewed: PropTypes.func,
 
   renderHeader: PropTypes.func,
   renderHeaderIndex: PropTypes.number,
